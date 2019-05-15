@@ -1,0 +1,128 @@
+/*  styles for menu */
+.menu {
+	margin: 0 auto 3em;
+}
+
+
+.navmenu{
+       font-weight: 600;
+    font-family: 'matrix-ii-ot', serif;
+    font-size: 18px;
+    color: #ffffff;
+    
+}
+
+.navmenu1{
+    font-weight: 600;
+    font-family: 'matrix-ii-ot', serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 100px;
+    
+}
+
+
+.navmenu:hover,
+.navmenu:focus{
+      text-decoration: none;
+  outline: 0;
+    color: #FBD8C9;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+
+.menu__list {
+        font-family: 'europa',serif;
+    color: #FFFCF5;
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+    font-family: 'europa',serif;
+	display: block;
+	margin: 1em 0;
+	font-weight: 200;
+	display: block;
+    color: #FFFCF5;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+
+.menu--sebastian .menu__link {
+    font-family: 'europa',serif;
+	position: relative;
+	display: block;
+	margin: 0 1em;
+	text-align: center;
+	color: #FFFCF5;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+.menu--sebastian .menu__link:hover,
+.menu--sebastian .menu__link:focus {
+	color: #fff;
+}
+
+.menu--sebastian .menu__item--current .menu__link {
+	color: #FBD8C9;
+}
+
+
+.menu--sebastian .menu__link::before {
+	top: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.menu--sebastian .menu__link::after {
+	bottom: 0;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.menu--sebastian .menu__item--current .menu__link::before,
+.menu--sebastian .menu__item--current .menu__link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+/*==================================*/
+ 
+
+
+
+/* Stack items for smaller screens */
+@media screen and (max-width:55em) {
+	.menu__list {
+		display: block;
+		margin: 0 auto;
+	}
+}
